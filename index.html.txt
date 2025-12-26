@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProFirma</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+  <img src="images/logo.svg" alt="ProFirma logo">
+  <ul>
+    <li><a href="#">Hjem</a></li>
+    <li><a href="#">Tjenester</a></li>
+    <li><a href="#">Om oss</a></li>
+    <li><a href="#">Kontakt</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Moderne løsninger for bedrifter</h1>
+  <p>Profesjonell kvalitet · Pålitelig samarbeid</p>
+</header>
+
+<section>
+  <h2>Tjenester</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Digitale løsninger</h3>
+      <p>Nettsider og systemer tilpasset din bedrift.</p>
+    </div>
+    <div class="card">
+      <h3>Rådgivning</h3>
+      <p>Strategisk veiledning for vekst og effektivitet.</p>
+    </div>
+    <div class="card">
+      <h3>Support</h3>
+      <p>Stabil drift og rask hjelp når du trenger det.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 ProFirma – Alle rettigheter reservert
+</footer>
+
+</body>
+</html>

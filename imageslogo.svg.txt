@@ -1,0 +1,7 @@
+<svg width="160" height="40" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="40" rx="8" fill="#2563EB"/>
+  <text x="20" y="26" text-anchor="middle" font-size="20" fill="white" font-family="Arial">P</text>
+  <text x="55" y="27" font-size="18" fill="#0A2540" font-family="Arial" font-weight="bold">
+    ProFirma
+  </text>
+</svg>
