@@ -1,102 +1,70 @@
-:root {
-  --primary: #0A2540;
-  --secondary: #2563EB;
-  --bg: #F8FAFC;
-  --text: #020617;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
-
-/* NAV */
-nav {
+/* FILM HERO BACKGROUND */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: 
+    linear-gradient(
+      rgba(2, 6, 23, 0.85),
+      rgba(2, 6, 23, 0.85)
+    ),
+    url("../images/film-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 20px;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-nav img {
-  height: 40px;
-}
-
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-nav a {
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--primary);
-}
-
-/* HERO */
-header {
-  padding: 80px 20px;
+  justify-content: center;
   text-align: center;
-  background: linear-gradient(120deg, var(--primary), var(--secondary));
   color: white;
 }
 
-header h1 {
-  font-size: 2.5rem;
+/* CINEMATIC TEXT */
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  animation: fadeUp 1.5s ease;
 }
 
-header p {
-  margin-top: 15px;
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  margin-top: 20px;
   font-size: 1.2rem;
+  color: #cbd5f5;
 }
 
-/* SECTIONS */
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: var(--primary);
+/* BUTTON */
+.hero button {
+  margin-top: 35px;
+  padding: 14px 40px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  background: #e50914;
   color: white;
+  cursor: pointer;
 }
 
-/* 📱 MOBIL */
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-  }
+.hero button:hover {
+  background: #f6121d;
+}
 
-  header h1 {
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
     font-size: 2rem;
   }
 }
